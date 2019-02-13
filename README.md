@@ -1,12 +1,5 @@
 # React app template
 
-* React
-* webpack
-* Babel
-* css
-* dotenv
-* eslint
-
 
 ## Install
 
