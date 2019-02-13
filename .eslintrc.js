@@ -19,7 +19,7 @@ module.exports = {
   "plugins": ["react"],
   "rules": {
     "indent": ["error", 2],
-    "quotes": ["error", "single"],
+    "quotes": ["error", "double"],
     "semi": ["error", "always"],
     "max-len": ["error", { "code": 120 }],
     "comma-dangle": ["error", {

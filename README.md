@@ -15,9 +15,9 @@
 
 ## Usage
 
-    yarn run start
+    yarn start
 
 
 ## Linter
 
-    yarn run linter
+    yarn linter
