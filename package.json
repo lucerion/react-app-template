@@ -6,7 +6,7 @@
   "license": "BSD-3-Clause",
   "author": "Alexander Skachko <alexander.skachko@gmail.com>",
   "scripts": {
-    "start": "webpack-dev-server --mode development --open --hot",
+    "start": "webpack serve --mode development --env development --hot",
     "build": "webpack --mode production",
     "lint": "eslint ."
   },
