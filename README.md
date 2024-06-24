@@ -8,21 +8,20 @@ Packages:
     of JavaScript in current and older browsers/environments
 * [eslint](https://www.npmjs.com/package/eslint) - linter
 
+## Setup
 
-## Installation
+### Locally
 
-    yarn install
+* Install dependencies: `yarn install`
+* Run application: `yarn start`
+* Open [http://localhost:8000](http://localhost:8000) in your browser.
 
+### Docker
 
-## Usage
-
-    yarn start
-
-
-## Linter
-
-    yarn lint
-
+* [Install Docker](https://docs.docker.com/get-docker/) on your machine.
+* Build image: `docker build -t react-app-template .`
+* Run application: `docker run -p 8000:8000 react-app-template`
+* Open [http://localhost:8000](http://localhost:8000) in your browser.
 
 ## License
 
