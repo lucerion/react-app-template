@@ -4,7 +4,7 @@
   "description": "React app template",
   "repository": "https://github.com/lucerion/react-app-template",
   "license": "BSD-3-Clause",
-  "author": "Alexander Skachko <alexander.skachko@gmail.com>",
+  "author": "Author <email>",
   "scripts": {
     "start": "webpack serve --mode development --env development --hot",
     "build": "webpack --mode production",
