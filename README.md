@@ -1,12 +1,11 @@
 # React app template
 
-Packages:
+Packages
 
-* [React](https://reactjs.org) - library for building user interfaces
-* [webpack](https://webpack.js.org) - module bundler. Support CSS, HTML, dotenv and environment variables
-* [Babel](https://babeljs.io) - toolchain for converting ECMAScript 2015+ code into a backwards compatible version
-    of JavaScript in current and older browsers/environments
-* [eslint](https://www.npmjs.com/package/eslint) - linter
+* [React](https://react.dev)
+* [webpack](https://webpack.js.org)
+* [Babel](https://babeljs.io)
+* [ESlint](https://eslint.org)
 
 ## Setup
 
@@ -18,10 +17,16 @@ Packages:
 
 ### Docker
 
-* [Install Docker](https://docs.docker.com/get-docker/) on your machine.
+* [Install Docker](https://docs.docker.com/get-started/get-docker) on your machine.
 * Build image: `docker build -t react-app-template .`
 * Run application: `docker run -p 8000:8000 react-app-template`
 * Open [http://localhost:8000](http://localhost:8000) in your browser.
+
+## Development
+
+### Linting
+
+    yarn lint
 
 ## License
 
