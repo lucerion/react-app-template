@@ -1,21 +1,27 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const Dotenv = require('dotenv-webpack');
+import Dotenv from 'dotenv-webpack';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import path from 'path';
 
-module.exports = {
+export default {
+  entry: './src/index.jsx',
   module: {
     rules: [
       {
-        test: /\.js$/,
-        exclude: /node_modules/,
+        exclude: /node_modules/u,
+        test: /\.(?:js|jsx)$/u,
         use: {
           loader: 'babel-loader',
         },
       },
       {
-        test: /\.css$/,
+        test: /\.css$/u,
         use: ['style-loader', 'css-loader'],
       },
     ],
+  },
+  output: {
+    filename: 'bundle.js',
+    path: path.resolve('dist'),
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -23,4 +29,7 @@ module.exports = {
     }),
     new Dotenv(),
   ],
+  resolve: {
+    extensions: ['.js', '.jsx'],
+  },
 };
