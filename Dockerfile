@@ -1,14 +1,10 @@
 from node:22-bullseye
 
-ARG DEV_PACKAGES="yarn"
-
-RUN apt-get update -qq && \
-    apt-get install -yq --no-install-recommends $DEV_PACKAGES
-
 WORKDIR /react-app-template
 
-COPY . .
+COPY package.json yarn.lock ./
+RUN yarn install --frozen-lockfile
 
-RUN yarn install
+COPY . .
 
 CMD ["yarn", "start"]
