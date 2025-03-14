@@ -10,8 +10,7 @@ Packages
 ## Setup
 
 * [Install Docker](https://docs.docker.com/get-started/get-docker) on your machine.
-* Build image `docker build -t react-app-template .`
-* Run application `docker run -p 8000:8000 react-app-template`
+* Build image and run application `docker compose up --build`
 * Open [http://localhost:8000](http://localhost:8000) in your browser.
 
 ## License

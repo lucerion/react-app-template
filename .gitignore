@@ -1,5 +1,10 @@
-package.lock
 node_modules
+
 dist
-.env
-Procfile
+build
+.cache
+
+.env*
+!.env.example
+
+*.log
