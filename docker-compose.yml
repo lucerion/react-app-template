@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  react-app-template:
+  app:
     build:
       context: .
       dockerfile: Dockerfile
@@ -13,5 +13,5 @@ services:
     ports:
       - "8080:8080"
     volumes:
-      - .:/react-app-template
-      - /react-app-template/node_modules
+      - .:/app
+      - /app/node_modules
