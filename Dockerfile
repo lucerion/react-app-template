@@ -3,14 +3,14 @@ ARG YARN_VERSION
 
 FROM node:${NODE_VERSION}-slim
 
-RUN corepack enable \
-    && corepack prepare yarn@${YARN_VERSION} --activate
+RUN corepack disable \
+    && npm install -g yarn@${YARN_VERSION}
 
-WORKDIR /react-app-template
+WORKDIR /app
 
 COPY package.json yarn.lock ./
 
-RUN yarn install --immutable
+RUN yarn install
 
 COPY . .
 

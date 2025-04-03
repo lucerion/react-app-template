@@ -11,7 +11,7 @@ Packages
 
 * [Install Docker](https://docs.docker.com/get-started/get-docker) on your machine.
 * Build image and run application `docker compose up --build`
-* Open [http://localhost:8000](http://localhost:8000) in your browser.
+* Open [http://localhost:8080](http://localhost:8080) in your browser.
 
 ## License
 
