@@ -3,9 +3,8 @@
 Packages
 
 * [React](https://react.dev)
-* [webpack](https://webpack.js.org)
-* [Babel](https://babeljs.io)
-* [ESlint](https://eslint.org)
+* [vite](https://vite.dev)
+* [eslint](https://eslint.org)
 
 ## Setup
 

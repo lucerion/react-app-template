@@ -5,8 +5,6 @@
 node_modules/
 
 eslint.*
-webpack.config.js
-.babelrc
 
 .dockerignore
 docker-compose.yml
